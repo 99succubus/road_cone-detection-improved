@@ -1,0 +1,5 @@
+names:
+- road_cone
+nc: 1
+train: C:\Users\Jerry\PycharmProjects9491\road_cone improved\data\train.txt
+val: C:\Users\Jerry\PycharmProjects9491\road_cone improved\data\val.txt

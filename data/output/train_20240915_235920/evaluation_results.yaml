@@ -1,0 +1,29 @@
+mAP50: !!python/object/apply:numpy.core.multiarray.scalar
+- &id001 !!python/object/apply:numpy.dtype
+  args:
+  - f8
+  - false
+  - true
+  state: !!python/tuple
+  - 3
+  - <
+  - null
+  - null
+  - null
+  - -1
+  - -1
+  - 0
+- !!binary |
+  wLhp9La1uz8=
+mAP50-95: !!python/object/apply:numpy.core.multiarray.scalar
+- *id001
+- !!binary |
+  0LYGS6LFoT8=
+precision: !!python/object/apply:numpy.core.multiarray.scalar
+- *id001
+- !!binary |
+  Jb+GILqy2T8=
+recall: !!python/object/apply:numpy.core.multiarray.scalar
+- *id001
+- !!binary |
+  Hh4eHh4evj8=

@@ -1,0 +1,60 @@
+DATA_CONFIG:
+  labels_dir: C:\Users\Jerry\PycharmProjects9491\road_cone improved\data\labels
+  road_cone_dir: C:\Users\Jerry\PycharmProjects9491\road_cone improved\data\images
+  test_images_dir: C:\Users\Jerry\PycharmProjects9491\road_cone improved\data\test_images
+  train_file: C:\Users\Jerry\PycharmProjects9491\road_cone improved\data\train.txt
+  val_file: C:\Users\Jerry\PycharmProjects9491\road_cone improved\data\val.txt
+  yaml_path: C:\Users\Jerry\PycharmProjects9491\road_cone improved\dataset.yaml
+EVALUATION_CONFIG:
+  conf_thres: 0.25
+  error_analysis:
+    confidence_threshold_analysis: true
+    save_false_negatives: true
+    save_false_positives: true
+  iou_thres: 0.45
+  visualization:
+    confidence_distribution:
+      bins: 20
+      figsize: &id001 !!python/tuple
+      - 10
+      - 6
+      filename: confidence_distribution.png
+    confusion_matrix:
+      cmap: Blues
+      figsize: !!python/tuple
+      - 12
+      - 10
+      filename: confusion_matrix.png
+    error_distribution:
+      figsize: *id001
+      filename: error_distribution.png
+    precision_recall_curve:
+      figsize: *id001
+      filename: precision_recall_curve.png
+    scatter_plot:
+      figsize: *id001
+      filename: scatter_plot.png
+MODEL_CONFIG:
+  conf_thres: 0.25
+  detection_color: !!python/tuple
+  - 0
+  - 255
+  - 0
+  detection_thickness: 2
+  device: cuda
+  img_size: 640
+  iou_thres: 0.45
+  model_size: s
+  pretrained: true
+  pretrained_model_path: C:\Users\Jerry\PycharmProjects9491\road_cone improved\models\yolov8s.pt
+TRAIN_CONFIG:
+  batch_size: 16
+  early_stopping_patience: 20
+  epochs: 200
+  learning_rate: 0.0001
+  lr_scheduler: cosine
+  momentum: 0.937
+  num_workers: 4
+  pin_memory: true
+  val_size: 0.2
+  weight_decay: 0.0005
